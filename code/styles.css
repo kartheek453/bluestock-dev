@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+}
+
+/* IPO Cards */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+}
+
+/* ============================= */
+/* 📌 Responsive Design */
+/* ============================= */
+
+/* Small Devices (Phones) */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin: auto;
+    }
+
+    .hero-section {
+        padding: 60px 20px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+/* Large Screens (Desktops) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .card {
+        min-height: 380px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+}
